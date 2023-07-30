@@ -51,7 +51,7 @@ const BlogCard = ({ blog: { title, desc, imageUrl, likes, authorId, _id } }) => 
         <div className={classes.blogData}>
           <div className={classes.left}>
             <h3>{title}</h3>
-            <p>{desc}</p>
+            <p>{desc.slice(0,10)}...</p>
             <span><span><strong>{authorId.username}</strong> </span>{authorId.createdAt.slice(0,10)}</span>
           </div>
           <div className={classes.right}>

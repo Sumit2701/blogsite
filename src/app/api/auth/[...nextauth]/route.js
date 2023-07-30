@@ -2,6 +2,7 @@ import NextAuth from "next-auth";
 import CredentialsProvider from 'next-auth/providers/credentials'
 import User from "@/models/User";
 import { signJwtToken } from "@/lib/jwt";
+
 import bcrypt from 'bcrypt'
 import db from "@/lib/db";
 
@@ -42,7 +43,11 @@ const handler = NextAuth({
                     }
                 }
             }
-        })
+        },
+       
+
+        
+        )
         
     ],
     pages: {

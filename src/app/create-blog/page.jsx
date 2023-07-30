@@ -23,7 +23,7 @@ const CreateBlog = () => {
 
     if (status === 'unauthenticated') {
         return <p className={classes.accessDenied}>
-            Access Denied
+            Access Denied, Please login
         </p>
     }
 
@@ -69,7 +69,8 @@ const CreateBlog = () => {
                 <h2>Create Post</h2>
                 <form onSubmit={handleSubmit}>
                     <input type="text" placeholder='Title...' onChange={(e) => setTitle(e.target.value)} />
-                    <textarea placeholder='Description...' onChange={(e) => setDesc(e.target.value)} />
+                    <textarea placeholder='Description...' onChange={(e) => setDesc(e.target.value)}
+                    className={classes.descriptionBox} />
                     <select value={category} onChange={(e) => setCategory(e.target.value)}>
                         <option value="Nature">Nature</option>
                         <option value="Mountain">Mountain</option>

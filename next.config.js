@@ -4,11 +4,7 @@ const nextConfig = {
         appDir: true,
         serverComponentsExternalPackages: ["mongoose"],
     },
-    // images: {
-    //     remotePatterns: [
-    //         { hostname: 'picsum.photos', protocol: 'https', port: '' }
-    //     ]
-    // },
+
     webpack(config) {
         config.experiments = {
             ...config.experiments,

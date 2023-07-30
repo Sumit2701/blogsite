@@ -50,7 +50,10 @@ const Login = () => {
                     <Link className={classes.loginNow} href='/register'>
                         Don&apos;t have an account? <br /> Register now.
                     </Link>
+
                 </form>
+              
+
             </div>
             <ToastContainer />
         </div>
