@@ -4,4 +4,4 @@ run
 after installing is finished then run
 => npm run dev  <=
 
-open the website on local
+open the website on (http://localhost:3000/)
